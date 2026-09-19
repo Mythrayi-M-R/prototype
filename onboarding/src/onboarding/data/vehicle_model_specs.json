@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "description": "Vehicle-model spec database. Keyed by lowercase substring matched against vehicle_details.model; first match wins, unmatched models fall back to VEHICLE_GEOMETRY's vehicle_type bucket. mass_kg = cited kerb weight + operating-load allowance (+50kg rider for two-wheelers, +150kg for cars). See README.md."
+  },
+  "entries": {
+    "scooty": {
+      "mass_kg": 150.0, "frontal_area_m2": 0.6, "drag_coefficient": 0.6,
+      "rolling_resistance_coefficient": 0.015, "cog_height_m": 0.60,
+      "track_width_m": 0.0, "wheelbase_m": 1.23, "fuel_type": "petrol",
+      "source_notes": "TVS Scooty Pep Plus. Kerb ~103kg + 50kg rider = 150kg. Wheelbase 1230mm."
+    },
+    "cb350": {
+      "mass_kg": 231.0, "frontal_area_m2": 0.7, "drag_coefficient": 0.6,
+      "rolling_resistance_coefficient": 0.015, "cog_height_m": 0.65,
+      "track_width_m": 0.0, "wheelbase_m": 1.441, "fuel_type": "petrol",
+      "source_notes": "Honda CB350 (H'ness). Kerb 181kg + 50kg rider = 231kg. Wheelbase 1441mm."
+    },
+    "himalayan": {
+      "mass_kg": 249.0, "frontal_area_m2": 0.75, "drag_coefficient": 0.65,
+      "rolling_resistance_coefficient": 0.018, "cog_height_m": 0.75,
+      "track_width_m": 0.0, "wheelbase_m": 1.51, "fuel_type": "petrol",
+      "source_notes": "Royal Enfield Himalayan. Kerb ~199kg + 50kg rider = 249kg. Wheelbase 1465-1510mm (1.51 used)."
+    },
+    "bajaj re": {
+      "mass_kg": 550.0, "frontal_area_m2": 1.3, "drag_coefficient": 0.6,
+      "rolling_resistance_coefficient": 0.015, "cog_height_m": 0.68,
+      "track_width_m": 1.30, "wheelbase_m": 2.0, "fuel_type": "petrol",
+      "source_notes": "Bajaj RE auto-rickshaw. Kerb ~400kg + ~150kg driver/passenger = 550kg."
+    },
+    "alto": {
+      "mass_kg": 890.0, "wheelbase_m": 2.38,
+      "source_notes": "Maruti Alto (K10) VXI. Kerb 740kg + 150kg = 890kg. Wheelbase 2380mm."
+    },
+    "ertiga": {
+      "mass_kg": 1300.0, "wheelbase_m": 2.74,
+      "source_notes": "Maruti Ertiga (7-seat MPV). Kerb 1150kg + 150kg = 1300kg. Wheelbase 2740mm."
+    },
+    "amaze": {
+      "mass_kg": 1102.0, "wheelbase_m": 2.47,
+      "source_notes": "Honda Amaze. Kerb 952kg + 150kg = 1102kg. Wheelbase 2470mm."
+    },
+    "honda brv": {
+      "mass_kg": 1400.0, "wheelbase_m": 2.662,
+      "source_notes": "Honda BR-V. Kerb 1199-1306kg (trim-dependent) + 150kg, 1400kg midpoint. Wheelbase 2662mm."
+    },
+    "brio": {
+      "mass_kg": 1070.0, "wheelbase_m": 2.345,
+      "source_notes": "Honda Brio. Kerb 920kg + 150kg = 1070kg. Wheelbase 2345mm."
+    },
+    "civic": {
+      "mass_kg": 1357.0, "wheelbase_m": 2.70,
+      "source_notes": "Honda Civic (2011 sedan). Kerb 1193-1222kg + 150kg, 1357kg midpoint. Wheelbase 2700mm."
+    },
+    "kwid": {
+      "mass_kg": 925.0, "wheelbase_m": 2.422,
+      "source_notes": "Renault Kwid. Kerb 775kg + 150kg = 925kg. Wheelbase 2422mm."
+    },
+    "dezire": {
+      "mass_kg": 1110.0, "wheelbase_m": 2.45,
+      "source_notes": "Maruti Swift Dzire. Kerb 960kg + 150kg = 1110kg. Wheelbase 2450mm. Keyed 'dezire' to match the real fleet spelling ('Swift dezire'), deliberately distinct from plain 'swift' (the lighter hatchback)."
+    },
+    "fz": {
+      "mass_kg": 185.0, "wheelbase_m": 1.33,
+      "source_notes": "Yamaha FZ-S FI. Kerb 135kg + 50kg rider = 185kg. Wheelbase 1330mm."
+    },
+    "passion pro": {
+      "mass_kg": 168.0, "wheelbase_m": 1.27,
+      "source_notes": "Hero Passion Pro. Kerb 118kg + 50kg rider = 168kg. Wheelbase 1270mm."
+    },
+    "avenis": {
+      "mass_kg": 156.0, "wheelbase_m": 1.265,
+      "source_notes": "Suzuki Avenis. Kerb 106kg + 50kg rider = 156kg. Wheelbase 1265mm."
+    },
+    "jupiter": {
+      "mass_kg": 156.0, "wheelbase_m": 1.275,
+      "source_notes": "TVS Jupiter. Kerb 106kg + 50kg rider = 156kg. Wheelbase 1275mm."
+    },
+    "ather": {
+      "mass_kg": 161.0, "wheelbase_m": 1.278,
+      "fuel_type": "electric", "engine_efficiency": 0.85, "idle_fuel_lph": 0.01,
+      "source_notes": "Ather 450 (base variant). Kerb 111kg + 50kg rider = 161kg. Wheelbase 1278mm. Canonical copy -- mirrored in scoring_pandera's own vehicle_model_specs.json."
+    },
+    "ola s1": {
+      "mass_kg": 171.0, "wheelbase_m": 1.359,
+      "fuel_type": "electric", "engine_efficiency": 0.85, "idle_fuel_lph": 0.01,
+      "source_notes": "Ola S1 (base variant; Air/X/Pro variants 101-125kg kerb, 121kg used). Kerb 121kg + 50kg rider = 171kg. Wheelbase 1359mm."
+    },
+    "chetak": {
+      "mass_kg": 184.0, "wheelbase_m": 1.330,
+      "fuel_type": "electric", "engine_efficiency": 0.85, "idle_fuel_lph": 0.01,
+      "source_notes": "Bajaj Chetak (electric). Kerb 134kg + 50kg rider = 184kg. Wheelbase 1330mm. Distinct from the petrol/CNG 'bajaj re' three-wheeler entry above."
+    }
+  }
+}
